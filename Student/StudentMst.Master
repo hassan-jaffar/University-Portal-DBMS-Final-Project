@@ -1,0 +1,78 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="StudentMst.Master.cs" Inherits="Flex.Student.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Labrada:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"/>
+    <script src="https://kit.fontawesome.com/d58e49b8e9.js" crossorigin="anonymous"></script>
+    
+    <link href="../Content/style.css" rel="stylesheet" />
+    <script src="../Scripts/bootstrap.min.js"></script>
+    <script src="../Scripts/jquery-3.6.4.min.js"></script>
+    <script src="../Scripts/popper.min.js"></script>
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <title>Flex</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server" style="min-height: 100%">
+    <div class="fullscreen pb-5">
+      <nav class="navbar navbar-custom navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand mx-3" href="HomePage.aspx" style="color: white"><i class="fa-solid fa-home mx-1"></i>Flex</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link mx-2 active" aria-current="page" href="StdAttendance.aspx"" style="color: white"><i class="fa-solid fa-hand mx-1"></i>Attendance</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link mx-2" href="../Student/StdMarks.aspx" style="color: white"><i class="fa-solid fa-check mx-1"></i>Marks</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="StdTranscript.aspx" style="color: white"><i class="fa-solid fa-list mx-1"></i>Transcript</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="StdRegistration.aspx" style="color: white"><i class="fa-solid fa-registered mx-1"></i>Course Registration</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="StdFeedback.aspx" style="color: white"><i class="fa-solid fa-comments mx-1"></i>Course Feedback</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="StdFeedetail.aspx" style="color: white"><i class="fa-solid fa-money-bills mx-1"></i>Fee Details</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="StdDeanlist.aspx" style="color: white"><i class="fa-solid fa-ranking-star mx-1"></i>Dean's List</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="../ComPages/Login.aspx" style="color: white"><i class="fa-solid fa-power-off mx-1"></i>Logout</a>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+    </div>
+    <div class="row justify-content-center mx-0 py-3 footer" style="background-color:lightgray">
+        <div class="col-md-12 text-center"><h5>FAST LHR - Powered by: 21L-5260, 21L-5386, 21L-7718, 21L-7605</h5></div>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,24 @@
+﻿using Flex.DAL;
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+namespace Flex.Student
+{
+
+    public partial class StdDeanlist : System.Web.UI.Page
+    {
+        public DataTable stdinfo { get; set; }
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            myDAL obj = new myDAL();
+            stdinfo = obj.getDHL();
+        }
+
+        
+    }
+}
